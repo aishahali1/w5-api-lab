@@ -11,9 +11,9 @@ let api = fetch('https://rickandmortyapi.com/api/character')
         let img = document.createElement("img");
         img.src=item.image
         img.style.width="30%";
+        card.appendChild(Cname);
+        card.appendChild(img);
     })
-    card.appendChild(Cname);
-    card.appendChild(img);
     container.appendChild(card);
     document.body.appendChild(container);
 })
